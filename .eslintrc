@@ -1,10 +1,10 @@
 {
   "extends": [
+    "prettier",
     "eslint:recommended",
     "eslint-config-airbnb-base",
     "plugin:vue/recommended",
     "plugin:vue-scoped-css/recommended",
-    "prettier",
     "eslint-config-prettier"
   ],
   "parserOptions": {
@@ -26,6 +26,8 @@
         "max": 2,
         "allowFirstLine": false
       }
-    }]
+    }],
+    "vue/html-self-closing": "off",
+    "vue/singleline-html-element-content-newline": "off",
   }
 }

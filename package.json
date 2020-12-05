@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prettier": "prettier --ignore-path .gitignore \"src/**/*.+(js|json|vue|jsx|wasm)\"",
+    "format": "yarn prettier --write",
+    "check-format": "yarn prettier --list-different",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(js|vue|json|jsx|wasm)\"",
     "lint-fix": "yarn lint --fix",
+    "validate": "yarn check-format && yarn lint",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },

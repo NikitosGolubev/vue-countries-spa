@@ -1,19 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">
-        Home
-      </router-link> |
-      <router-link to="/about">
-        About
-      </router-link>
+      <router-link to="/">Home</router-link>
+      |
+      <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-  /* eslint-disable vue-scoped-css/require-scoped */
+/* eslint-disable vue-scoped-css/require-scoped */
 </script>
 
 <style lang="scss">
