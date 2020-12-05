@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-airbnb-base",
+    "plugin:vue/recommended",
+    "plugin:vue-scoped-css/recommended",
+    "prettier",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": 3,
+      "multiline": {
+        "max": 2,
+        "allowFirstLine": false
+      }
+    }]
+  }
+}
